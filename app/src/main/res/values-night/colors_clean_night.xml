@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    CLEAN UI - Dark Theme Colors (values-night)
+    Deep dark backgrounds, not pitch black - easier on eyes
+-->
+<resources>
+    <!-- Primary -->
+    <color name="colorPrimary">#9FA8DA</color>
+    <color name="colorPrimaryDark">#1A1A2E</color>
+    <color name="colorPrimaryVariant">#7986CB</color>
+    <color name="colorOnPrimary">#1A1A2E</color>
+
+    <color name="colorAccent">#9FA8DA</color>
+    <color name="colorSecondary">#9FA8DA</color>
+    <color name="colorOnSecondary">#1A1A2E</color>
+
+    <!-- Backgrounds -->
+    <color name="colorBackground">#1C1B1F</color>
+    <color name="colorSurface">#2B2930</color>
+    <color name="colorOnBackground">#E6E1E5</color>
+    <color name="colorOnSurface">#E6E1E5</color>
+
+    <!-- Note card -->
+    <color name="note_card_background">#2B2930</color>
+    <color name="note_card_border">#3A3840</color>
+
+    <!-- App bar -->
+    <color name="appbar_background">#1C1B1F</color>
+    <color name="appbar_text">#E6E1E5</color>
+
+    <!-- Text -->
+    <color name="text_primary">#E6E1E5</color>
+    <color name="text_secondary">#CAC4D0</color>
+    <color name="text_hint">#938F99</color>
+
+    <!-- Tag chips -->
+    <color name="tag_background">#2A2840</color>
+    <color name="tag_text">#9FA8DA</color>
+
+    <!-- TODO keywords -->
+    <color name="todo_keyword_todo">#EF9A9A</color>
+    <color name="todo_keyword_done">#A5D6A7</color>
+    <color name="todo_keyword_next">#FFCC80</color>
+    <color name="todo_keyword_wait">#CE93D8</color>
+
+    <!-- Divider -->
+    <color name="divider">#2B2930</color>
+
+    <!-- Bottom navigation -->
+    <color name="bottom_nav_background">#2B2930</color>
+    <color name="bottom_nav_selected">#9FA8DA</color>
+    <color name="bottom_nav_unselected">#938F99</color>
+
+    <!-- Notebook -->
+    <color name="notebook_item_background">#1C1B1F</color>
+    <color name="notebook_item_background_active">#2A2840</color>
+
+    <!-- Error -->
+    <color name="colorError">#F2B8B5</color>
+</resources>
