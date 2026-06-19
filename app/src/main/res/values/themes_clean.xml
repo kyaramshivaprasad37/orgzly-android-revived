@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    CLEAN UI Theme
+    Paste this into: app/src/main/res/values/themes.xml
+    REPLACE the existing AppTheme style block with this one.
+    Keep everything else in the file as-is.
+-->
+<resources>
+
+    <!-- ============================================================
+         BASE CLEAN THEME
+         Light: white background, clean cards, indigo accent
+         ============================================================ -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/appbar_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/bottom_nav_background</item>
+
+        <!-- Typography - clean system font -->
+        <item name="android:fontFamily">sans-serif</item>
+
+        <!-- Remove all shadows from AppBar for flat Keep-like look -->
+        <item name="actionBarElevation">0dp</item>
+
+        <!-- Toolbar style -->
+        <item name="toolbarStyle">@style/CleanToolbar</item>
+
+        <!-- Card style -->
+        <item name="materialCardViewStyle">@style/CleanCard</item>
+
+        <!-- FAB style -->
+        <item name="floatingActionButtonStyle">@style/CleanFAB</item>
+
+        <!-- Bottom Navigation -->
+        <item name="bottomNavigationStyle">@style/CleanBottomNav</item>
+
+        <!-- Chip / tag style -->
+        <item name="chipStyle">@style/CleanChip</item>
+
+        <!-- List item ripple - subtle -->
+        <item name="android:colorControlHighlight">#1A5C6BC0</item>
+    </style>
+
+    <!-- ============================================================
+         TOOLBAR - flat, white, no shadow
+         ============================================================ -->
+    <style name="CleanToolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/appbar_background</item>
+        <item name="android:elevation">0dp</item>
+        <item name="titleTextColor">@color/appbar_text</item>
+        <item name="subtitleTextColor">@color/text_secondary</item>
+        <item name="android:paddingStart">8dp</item>
+    </style>
+
+    <!-- ============================================================
+         CARD - rounded corners, subtle border, no heavy shadow
+         Like Google Keep cards
+         ============================================================ -->
+    <style name="CleanCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/note_card_background</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/note_card_border</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPadding">0dp</item>
+    </style>
+
+    <!-- ============================================================
+         FAB - indigo, rounded
+         ============================================================ -->
+    <style name="CleanFAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="tint">@color/colorOnPrimary</item>
+    </style>
+
+    <!-- ============================================================
+         BOTTOM NAV
+         ============================================================ -->
+    <style name="CleanBottomNav" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/bottom_nav_background</item>
+        <item name="itemIconTint">@color/bottom_nav_unselected</item>
+        <item name="itemTextColor">@color/bottom_nav_unselected</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- ============================================================
+         CHIPS - for tags, keywords
+         ============================================================ -->
+    <style name="CleanChip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/tag_background</item>
+        <item name="android:textColor">@color/tag_text</item>
+        <item name="chipCornerRadius">16dp</item>
+        <item name="chipMinHeight">24dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="chipStrokeWidth">0dp</item>
+    </style>
+
+    <!-- ============================================================
+         NOTE HEADING TEXT - clean, readable
+         ============================================================ -->
+    <style name="NoteHeading">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+    </style>
+
+    <!-- ============================================================
+         NOTE BODY PREVIEW TEXT
+         ============================================================ -->
+    <style name="NoteBody">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- ============================================================
+         NOTEBOOK LIST ITEM
+         ============================================================ -->
+    <style name="NotebookItem">
+        <item name="android:background">@color/notebook_item_background</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+</resources>
