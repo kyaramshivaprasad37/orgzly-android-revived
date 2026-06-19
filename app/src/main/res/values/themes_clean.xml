@@ -31,9 +31,6 @@
         <!-- Typography - clean system font -->
         <item name="android:fontFamily">sans-serif</item>
 
-        <!-- Remove all shadows from AppBar for flat Keep-like look -->
-        <item name="actionBarElevation">0dp</item>
-
         <!-- Toolbar style -->
         <item name="toolbarStyle">@style/CleanToolbar</item>
 
