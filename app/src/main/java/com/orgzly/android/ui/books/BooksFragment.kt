@@ -34,7 +34,7 @@ import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import cl.emilym.compose.units.rdp
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.orgzly.BuildConfig
@@ -166,7 +166,7 @@ class BooksFragment : CommonFragment(), DrawerItem, OnViewHolderClickListener<Bo
         viewAdapter.setHasStableIds(true)
 
         binding.fragmentBooksRecyclerView.let {
-            it.layoutManager = LinearLayoutManager(context)
+            it.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
             it.adapter = viewAdapter
         }
 
